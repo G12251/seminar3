@@ -1,0 +1,33 @@
+decimal = int(input("Enter a decimal number :"))
+bnum1 = "0b100"
+bnum2 = "0b110"
+decnum1 = int(bnum1, 2)
+mysum = decnum1 + decnum2
+number = input("input the number: ")
+print (decimalNumber)
+print(binaryNumber.replace("0o",""))
+
+num = int(input("Enter the number"))
+if num%2 ==0:
+    print("This is even number")
+else    print("This is odd number")
+
+
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+decimal = int(input("Enter a decimal number :"))
+
+
+def decimal_to_octal(decimal):
+    octal = 0
+    i = 1
+    while (decimal != 0):
+        octal = octal + (decimal % 8)* i
+        decimal = int(decimal/8)
+        i = i * 10
+    return octal
+
+
+print("The octal equivalent is :",decimal_to_octal(decimal))
